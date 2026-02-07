@@ -1,59 +1,155 @@
-# Frontend
+# Event Registration Form
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.2.
+A modern, responsive event registration form built with Angular 21 featuring reactive forms, real-time validation, and a clean UI powered by Tailwind CSS.
 
-## Development server
+## 🎥 Demo Video
 
-To start a local development server, run:
+[![Watch Demo][https://drive.google.com/file/d/16vj3ya_yop23kehBcRZrSz2jUAsDQwts/view?usp=sharing]
+
+
+## ✨ Features
+
+- **Reactive Forms**: Built with Angular's reactive forms module for robust form handling
+- **Real-time Validation**: Instant feedback with field-level validation
+- **Modern UI**: Clean and responsive design using Tailwind CSS 4.x
+- **Accessibility**: Semantic HTML with proper labels and ARIA attributes
+- **Form Controls**:
+  - Full Name (required)
+  - Email (required, with email format validation)
+  - Phone Number (required, must be exactly 10 digits)
+  - Event Selection (dropdown with multiple event options)
+  - Event Date (date picker)
+  - Terms & Conditions (checkbox with required acceptance)
+
+## 🚀 Technologies
+
+- **Angular 21**: Latest version with standalone components
+- **TypeScript 5.9**: Type-safe development
+- **Tailwind CSS 4.x**: Utility-first CSS framework
+- **Reactive Forms**: Angular's form validation and state management
+- **Vitest**: Fast unit testing
+- **Angular CLI 21.1.2**: Project scaffolding and tooling
+
+## 📋 Prerequisites
+
+- Node.js (v18 or higher)
+- npm 11.6.2 or higher
+
+## 🛠️ Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd event-form
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+## 🏃 Development Server
+
+Start the development server:
 
 ```bash
+npm start
+# or
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Navigate to `http://localhost:4200/` in your browser. The application will automatically reload when you modify source files.
 
-## Code scaffolding
+## 🏗️ Building for Production
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Build the project for production:
 
 ```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
+npm run build
+# or
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The build artifacts will be stored in the `dist/` directory, optimized for performance and speed.
 
-## Running unit tests
+## 🧪 Running Tests
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Execute unit tests with Vitest:
 
 ```bash
+npm test
+# or
 ng test
 ```
 
-## Running end-to-end tests
+## 📁 Project Structure
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
+```
+event-form/
+├── src/
+│   ├── app/
+│   │   ├── event-form/          # Event form component
+│   │   │   ├── event-form.ts    # Component logic & validation
+│   │   │   ├── event-form.html  # Form template
+│   │   │   ├── event-form.css   # Component styles
+│   │   │   └── event-form.spec.ts
+│   │   ├── app.ts               # Root component
+│   │   ├── app.config.ts        # Application configuration
+│   │   └── app.routes.ts        # Routing configuration
+│   ├── index.html               # Main HTML file
+│   ├── main.ts                  # Application entry point
+│   └── styles.css               # Global styles
+├── public/                      # Static assets
+├── angular.json                 # Angular workspace config
+├── package.json                 # Dependencies & scripts
+└── tsconfig.json               # TypeScript configuration
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🎨 Form Validation Rules
 
-## Additional Resources
+| Field | Validation |
+|-------|-----------|
+| Full Name | Required |
+| Email | Required, Must be valid email format |
+| Phone | Required, Must be exactly 10 digits |
+| Event Name | Required, Select from dropdown |
+| Event Date | Required |
+| Terms & Conditions | Must be accepted |
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🔧 Code Scaffolding
+
+Generate new components using Angular CLI:
+
+```bash
+# Generate a new component
+ng generate component component-name
+
+# View all available schematics
+ng generate --help
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📞 Support
+
+For support, please open an issue in the repository or contact the maintainers.
+
+## 🔗 Additional Resources
+
+- [Angular CLI Documentation](https://angular.dev/tools/cli)
+- [Angular Forms Guide](https://angular.dev/guide/forms)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+
+---
+
+**Built with ❤️ using Angular 21**
